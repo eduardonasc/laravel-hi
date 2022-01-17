@@ -7,6 +7,6 @@
         <title>Templates</title>
     </head>
     <body class="antialiased">
-        <h1>Meu primeiro template Blade</h1>
+        <h2>Instituto de Ciência e Tecnologia de Franca</h2>
     </body>
 </html>
