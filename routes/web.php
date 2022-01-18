@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CalculadoraController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +21,10 @@ Route::get('/', function () {
 Route::get('/act', function () {
     return view('act');
 });
+
+Route::get('/pokemon/{name}', function ($name) {
+    return view('pokemon', compact('name'));
+});
+
+Route::get('/calculadora', [CalculadoraController::class, 'index']);
+Route::post('/calcular', [CalculadoraController::class, 'calcular']);
